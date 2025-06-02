@@ -1,0 +1,137 @@
+/* tasks.css */
+
+.tasks-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+form input {
+    flex: 1;
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+form input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+form button {
+    padding: 12px 30px;
+    background-color: #f5a623;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #f5a623cc;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d48806;
+    box-shadow: 0 6px 14px #d48806cc;
+}
+
+.no-tasks {
+    text-align: center;
+    font-style: italic;
+    color: #f8f8f8cc;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+    background-color: #3071a9;
+}
+
+thead th {
+    padding: 14px 0;
+    font-weight: 700;
+    color: #e1e9f0;
+    letter-spacing: 1.2px;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tbody td {
+    padding: 15px 12px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.action-btn {
+    border: none;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    box-shadow: 0 4px 10px #f39c12cc;
+}
+
+.edit-btn:hover {
+    background-color: #d48806;
+    box-shadow: 0 6px 14px #d48806cc;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    box-shadow: 0 4px 10px #e74c3ccc;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 14px #c0392bcc;
+}
+
+/* body navy background */
+body {
+    background-color: #001f4d; /* Navy solid blue */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,83 @@
+/* AiSegment.css */
+
+.component-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #001f4d; /* dark blue background */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* white text */
+    text-align: left;
+}
+
+.component-container h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+    color: white;
+}
+
+.component-container textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-family: inherit;
+    color: #001f4d; /* keep dark text inside textarea */
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.component-container textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+.component-container button {
+    background-color: #61dafb; /* lighter blue button */
+    color: #001f4d; /* dark text on button */
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.component-container button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.component-container button:hover:not(:disabled) {
+    background-color: #21a1f1;
+    color: white;
+}
+
+.component-container pre {
+    margin-top: 20px;
+    background-color: #f0f4ff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: #001f4d;
+    border: 1px solid #cbd4e7;
+}
+
+.component-container p.error {
+    color: #c53030;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}

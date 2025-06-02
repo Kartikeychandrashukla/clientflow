@@ -1,0 +1,149 @@
+/* dashboard.css */
+
+.dashboard-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    margin-top: -120px;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* or your favorite cursive */
+    background-color: #001f4d; /* navy blue background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dashboard-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 2%, transparent 70%);
+    animation: floatParticles 15s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  @keyframes floatParticles {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(50px, 50px);
+    }
+  }
+  
+  .dashboard-container > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .greeting {
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    animation: glowPulse 3s ease-in-out infinite alternate;
+    letter-spacing: 0.05em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* or your cursive */
+    margin-bottom: 60px;
+    user-select: none;
+  }
+  
+  @keyframes glowPulse {
+    from {
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6),
+        0 0 30px rgba(255, 255, 255, 0.4);
+    }
+    to {
+      text-shadow:
+        0 0 20px rgba(255, 255, 255, 1),
+        0 0 30px rgba(255, 255, 255, 0.8),
+        0 0 40px rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  /* Grid layout for dashboard cards */
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 1;
+  }
+  
+  .dashboard-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 30px 25px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+  }
+  
+  .dashboard-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.05em;
+  }
+  
+  .dashboard-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ddd;
+  }
+
+  .campaigns-card {
+    background: rgba(255, 255, 255, 0.1); /* same as other cards */
+    border-radius: 18px;
+    padding: 30px 25px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .campaigns-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+  }
+
+  .ai-segment-card {
+    background: rgba(255, 255, 255, 0.1); /* same as other cards */
+    border-radius: 18px;
+    padding: 30px 25px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .ai-segment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+  }
+  
+  
+  
+  
